@@ -1,0 +1,10 @@
+section.banner{
+    width: 100%;
+    height:calc(100vh - 8rem);
+    min-height: 37.5rem;
+    background-color: black;
+    background-image: url(../imagens/bg.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position:right bottom;
+}
