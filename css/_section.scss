@@ -1,10 +1,50 @@
-section.banner{
+section.banner {
     width: 100%;
-    height:calc(100vh - 8rem);
+    height: 600px;
     min-height: 37.5rem;
     background-color: black;
     background-image: url(../imagens/bg.jpg);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position:right bottom;
+    background-position: right bottom;
+}
+
+section.banner .text-banner {
+    padding: 6.2rem 6.2rem 6.2rem 15rem;
+    display: inline-block;
+
+}
+
+section.banner .text-banner-single {
+    width: 19.6rem;
+    height: 5rem;
+    margin-top: 1rem;
+    background-image: url(../imagens/box-text.png);
+    background-size: 100% 100%;
+    color: white;
+    font-size: 1.4rem;
+    font-style: italic;
+    padding: 1.5rem 1.4rem;
+    text-transform: uppercase;
+
+
+    &:nth-of-type(2) {
+        width: 15.5rem;
+        position: relative;
+        left: -0.7rem;
+    }
+
+    &:nth-of-type(3) {
+        width: 10.5rem;
+        position: relative;
+        left: -1.2rem;
+    }
+
+    &:nth-of-type(4) {
+        width: 20rem;
+        position: relative;
+        background-image: url(../imagens/box-white-text.png);
+        color:black;
+        left: -2rem;
+    }
 }

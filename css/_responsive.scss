@@ -1,7 +1,30 @@
-@media screen and (max-width: 768px){
-    section.banner{
-        height:70vh;
+@media screen and (max-width:1024px) {
+    section.banner .text-banner {
+        padding: 6.2rem;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    section.banner {
+        height: 100vw;
         min-height: unset;
         max-height: 50rem;
     }
+}
+
+@media screen and (max-width: 680px) {
+
+    header nav.desktop {
+        display: none;
+    }
+
+
+}
+
+@media screen and (max-width: 425px) {
+    html {
+        font-size: 12px;
+    }
+
 }
