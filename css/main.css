@@ -192,6 +192,57 @@ section.featuredVehicles .line-title:nth-of-type(2) {
   margin-left: 0.5rem;
 }
 
+section.featuredVehicles .featuredShowcase {
+  width: 100%;
+  padding: 2.5rem 0;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+  margin: 0 0.3rem;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox .carimg {
+  background-image: url(../imagens/carro1.jpg);
+  background-size: cover;
+  width: 100%;
+  padding-top: 100%;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox h2 {
+  text-transform: none;
+  font-size: 1.25rem;
+  text-align: left;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox p {
+  color: #353535;
+  font-size: 0.9rem;
+  padding: 0.5rem 0;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
+  display: inline-block;
+  width: 9.3rem;
+  height: 3.1rem;
+  line-height: 3.1rem;
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-style: italic;
+  background-color: var(--selected);
+  border-bottom: 0.3rem solid #B21E1E;
+  border-radius: 1.25rem;
+}
+
 @media screen and (max-width: 1024px) {
   section.banner .text-banner {
     padding: 6.2rem;
@@ -213,11 +264,37 @@ section.featuredVehicles .line-title:nth-of-type(2) {
   header nav.mobile {
     display: block;
   }
+  section.featuredVehicles .featuredShowcase.flexCenter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+    margin: 0 0.3rem 2.5rem 0.3rem;
+    text-align: center;
+    width: 80%;
+  }
+  section.featuredVehicles .featuredShowcase.flexCenter .carBox h2 {
+    text-align: center;
+  }
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
   html {
     font-size: 12px;
+  }
+  section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  section.banner {
+    height: 110vw;
+  }
+  section.banner .text-banner {
+    padding: 2.5rem 4.5rem;
   }
 }
 /*# sourceMappingURL=main.css.map */

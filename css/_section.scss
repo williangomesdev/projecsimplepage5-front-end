@@ -78,3 +78,54 @@ section.featuredVehicles .line-title {
 
     }
 }
+
+
+section.featuredVehicles .featuredShowcase {
+    width: 100%;
+    padding: 2.5rem 0;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter {
+    justify-content: center;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+    margin: 0 0.3rem;
+
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox .carimg {
+    background-image: url(../imagens/carro1.jpg);
+    background-size: cover;
+    width: 100%;
+    padding-top: 100%;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox h2 {
+    text-transform: none;
+    font-size: 1.25rem;
+    text-align: left;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox p {
+    color: #353535;
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+}
+
+section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
+    display: inline-block;
+    width: 9.3rem;
+    height: 3.1rem;
+    line-height: 3.1rem;
+    text-align: center;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-style: italic;
+    background-color: var(--selected);
+    border-bottom: 0.3rem solid #B21E1E;
+    border-radius: 1.25rem;
+}

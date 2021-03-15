@@ -14,8 +14,6 @@
 }
 
 @media screen and (max-width: 680px) {
-
-
     header nav.desktop {
         display: none;
     }
@@ -24,12 +22,43 @@
         display: block;
     }
 
+    section.featuredVehicles .featuredShowcase.flexCenter {
+        flex-direction: column;
+    }
+
+    section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+        margin: 0 0.3rem 2.5rem 0.3rem;
+        text-align: center;
+        width: 80%;
+
+    }
+
+    section.featuredVehicles .featuredShowcase.flexCenter .carBox h2 {
+        text-align: center;
+    }
+
 
 }
 
-@media screen and (max-width: 425px) {
+@media screen and (max-width: 480px) {
     html {
         font-size: 12px;
     }
 
+    section.featuredVehicles .featuredShowcase.flexCenter .carBox {
+        width: 100%;
+
+    }
+
+}
+
+@media screen and (max-width:1024px) {
+    section.banner {
+        height: 110vw;
+    }
+
+
+    section.banner .text-banner {
+        padding: 2.5rem 4.5rem;
+    }
 }
