@@ -10,14 +10,17 @@ html {
   font-size: 16px;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
-.container {
+html .container,
+body .container {
   width: 100%;
   max-width: 1440px;
   margin: 0 auto;
+  overflow-x: hidden;
 }
 
 .flexCenter {
@@ -62,6 +65,10 @@ header nav.desktop ul {
 header nav.desktop ul li {
   display: inline-block;
   padding-left: 4rem;
+}
+
+header nav.desktop ul li:nth-of-type(4) {
+  padding-right: 1rem;
 }
 
 header nav.desktop ul li a {
@@ -205,6 +212,7 @@ section.featuredVehicles .featuredShowcase.flexCenter {
 
 section.featuredVehicles .featuredShowcase.flexCenter .carBox {
   margin: 0 0.3rem;
+  width: inherit;
 }
 
 section.featuredVehicles .featuredShowcase.flexCenter .carBox .carimg {
@@ -228,7 +236,7 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox p {
   padding: 0.5rem 0;
 }
 
-section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
+.sectionButton {
   display: inline-block;
   width: 9.3rem;
   height: 3.1rem;
@@ -241,11 +249,106 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
   background-color: var(--selected);
   border-bottom: 0.3rem solid #B21E1E;
   border-radius: 1.25rem;
+  cursor: pointer;
+}
+
+section.servicesDescription.container {
+  margin: unset;
+  max-width: unset;
+}
+
+section.servicesDescription.container.flexCenter {
+  -webkit-box-pack: unset;
+      -ms-flex-pack: unset;
+          justify-content: unset;
+  -webkit-box-align: unset;
+      -ms-flex-align: unset;
+          align-items: unset;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne,
+section.servicesDescription.container.flexCenter .descriptionTwo {
+  color: white;
+  width: 50%;
+  padding: 5.6rem 2%;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne {
+  background-color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne .descriptionOnePartOne {
+  padding-right: 3.7rem;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne h2,
+section.servicesDescription.container.flexCenter .descriptionTwo h2 {
+  font-size: 2rem;
+  font-weight: normal;
+  font-style: italic;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne ul {
+  list-style-position: inside;
+  margin: 1.2rem 0;
+}
+
+section.servicesDescription.container.flexCenter .descriptionTwo {
+  background-color: var(--selected);
+  text-align: justify;
+}
+
+section.servicesDescription.container.flexCenter .descriptionTwo p {
+  font-size: 1.3rem;
+  padding: 0.6rem 0;
+}
+
+section.servicesDescription.container.flexCenter .navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+section.servicesDescription.container.flexCenter .navigation .arrow img {
+  padding: 0 0.6rem;
+  cursor: pointer;
+}
+
+section.servicesDescription.container.flexCenter .navigation h2 {
+  color: #252525;
+  font-size: 1.8rem;
 }
 
 @media screen and (max-width: 1024px) {
   section.banner .text-banner {
     padding: 6.2rem;
+  }
+}
+
+@media screen and (max-width: 970px) {
+  section.servicesDescription.container.flexCenter .descriptionOne {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
 }
 
@@ -278,6 +381,19 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
   section.featuredVehicles .featuredShowcase.flexCenter .carBox h2 {
     text-align: center;
   }
+  section.servicesDescription.container.flexCenter {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.servicesDescription.container.flexCenter .descriptionOne,
+  section.servicesDescription.container.flexCenter .descriptionTwo {
+    width: 100%;
+  }
+  section.servicesDescription.container.flexCenter .descriptionOne .descriptionOnePartOne {
+    padding-right: unset;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -289,7 +405,7 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
   }
 }
 
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 320px) {
   section.banner {
     height: 110vw;
   }

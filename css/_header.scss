@@ -19,6 +19,9 @@ header nav.desktop ul li {
     display: inline-block;
     padding-left: 4rem;
 
+    &:nth-of-type(4) {
+        padding-right: 1rem;
+    }
 }
 
 header nav.desktop ul li a {

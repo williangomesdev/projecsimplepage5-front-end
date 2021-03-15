@@ -91,6 +91,7 @@ section.featuredVehicles .featuredShowcase.flexCenter {
 
 section.featuredVehicles .featuredShowcase.flexCenter .carBox {
     margin: 0 0.3rem;
+    width: inherit;
 
 }
 
@@ -115,7 +116,7 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox p {
     padding: 0.5rem 0;
 }
 
-section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
+.sectionButton {
     display: inline-block;
     width: 9.3rem;
     height: 3.1rem;
@@ -128,4 +129,78 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox a {
     background-color: var(--selected);
     border-bottom: 0.3rem solid #B21E1E;
     border-radius: 1.25rem;
+    cursor: pointer;
+}
+
+section.servicesDescription.container {
+    margin: unset;
+    max-width: unset;
+}
+
+section.servicesDescription.container.flexCenter {
+    justify-content: unset;
+    align-items: unset;
+
+}
+
+
+section.servicesDescription.container.flexCenter .descriptionOne,
+section.servicesDescription.container.flexCenter .descriptionTwo {
+    color: white;
+    width: 50%;
+    padding: 5.6rem 2%;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne {
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne .descriptionOnePartOne {
+    padding-right: 3.7rem;
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne h2,
+section.servicesDescription.container.flexCenter .descriptionTwo h2 {
+    font-size: 2rem;
+    font-weight: normal;
+    font-style: italic;
+
+
+}
+
+section.servicesDescription.container.flexCenter .descriptionOne ul {
+    list-style-position: inside;
+    margin: 1.2rem 0;
+}
+
+
+section.servicesDescription.container.flexCenter .descriptionTwo {
+    background-color: var(--selected);
+    text-align: justify;
+}
+
+
+section.servicesDescription.container.flexCenter .descriptionTwo p {
+    font-size: 1.3rem;
+    padding: 0.6rem 0;
+}
+
+section.servicesDescription.container.flexCenter .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.servicesDescription.container.flexCenter .navigation .arrow img {
+    padding: 0 0.6rem;
+    cursor: pointer;
+
+}
+
+section.servicesDescription.container.flexCenter .navigation h2 {
+    color: #252525;
+    font-size: 1.8rem;
 }

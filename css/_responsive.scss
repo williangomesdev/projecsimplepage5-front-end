@@ -4,6 +4,13 @@
     }
 }
 
+@media screen and (max-width: 970px) {
+
+    section.servicesDescription.container.flexCenter .descriptionOne {
+        flex-direction: column;
+        align-items: center;
+    }
+}
 
 @media screen and (max-width: 768px) {
     section.banner {
@@ -11,6 +18,7 @@
         min-height: unset;
         max-height: 50rem;
     }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -37,6 +45,18 @@
         text-align: center;
     }
 
+    section.servicesDescription.container.flexCenter {
+        flex-direction: column;
+    }
+
+    section.servicesDescription.container.flexCenter .descriptionOne,
+    section.servicesDescription.container.flexCenter .descriptionTwo {
+        width: 100%;
+    }
+
+    section.servicesDescription.container.flexCenter .descriptionOne .descriptionOnePartOne {
+        padding-right: unset;
+    }
 
 }
 
@@ -52,7 +72,7 @@
 
 }
 
-@media screen and (max-width:1024px) {
+@media screen and (max-width:320px) {
     section.banner {
         height: 110vw;
     }
