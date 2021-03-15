@@ -23,6 +23,48 @@ header nav.desktop ul li {
 
 header nav.desktop ul li a {
     text-decoration: none;
+    font-style: italic;
+    color: black;
+    font-size: 1.1rem;
+
+    &:hover {
+        color: var(--selected);
+    }
+}
+
+nav.mobile {
+    display: none;
+
+    width: 32px;
+    height: 32px;
+    background-image: url(../imagens/icon_menu.png);
+    background-size: 100% 100%;
+    cursor: pointer;
+
+}
+
+
+nav.mobile ul {
+    display: none;
+    width: 100%;
+    position: absolute;
+    top: 8rem;
+    left: 0;
+    z-index: 10;
+    background-color: white;
+    border-bottom: 4px solid var(--selected);
+    text-align: center;
+    list-style-type: none;
+}
+
+header nav.mobile ul li {
+    padding: 2rem;
+
+}
+
+nav.mobile li a {
+    text-decoration: none;
+    font-style: italic;
     color: black;
     font-size: 1.1rem;
 

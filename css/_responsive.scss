@@ -15,8 +15,13 @@
 
 @media screen and (max-width: 680px) {
 
+
     header nav.desktop {
         display: none;
+    }
+
+    header nav.mobile {
+        display: block;
     }
 
 

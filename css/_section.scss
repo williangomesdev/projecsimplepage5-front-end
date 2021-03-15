@@ -44,7 +44,37 @@ section.banner .text-banner-single {
         width: 20rem;
         position: relative;
         background-image: url(../imagens/box-white-text.png);
-        color:black;
+        color: black;
         left: -2rem;
+    }
+}
+
+section.featuredVehicles>.flexCenter {
+    justify-content: center;
+    width: 100%;
+}
+
+section.featuredVehicles {
+    padding: 5.6rem 2%;
+}
+
+section.featuredVehicles h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: italic;
+    text-transform: uppercase;
+}
+
+section.featuredVehicles .line-title {
+    width: 20%;
+    border: 1px solid black;
+
+    &:nth-of-type(1) {
+        margin-right: 0.5rem;
+    }
+
+    &:nth-of-type(2) {
+        margin-left: 0.5rem;
+
     }
 }
