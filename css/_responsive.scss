@@ -10,13 +10,44 @@
         flex-direction: column;
         align-items: center;
     }
+
+    header nav.desktop ul li,
+    footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
+        padding-left: 3rem;
+    }
 }
+
 
 @media screen and (max-width: 768px) {
     section.banner {
         height: 100vw;
         min-height: unset;
         max-height: 50rem;
+    }
+
+    section.contact.container form.flexCenter input[type=text],
+    section.contact.container form.flexCenter .flexRow.flexCenter input[type=email],
+    section.contact.container form.flexCenter .flexRow.flexCenter input[type=tel] {
+        width: 100%;
+        margin: 1.2rem 2%;
+    }
+
+    section.contact.container form.flexCenter .flexRow {
+        width: 100%;
+    }
+
+    section.contact.container form.flexCenter .flexRow.flexCenter {
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    section.contact.container form.flexCenter textarea {
+        width: 100%;
+    }
+
+    header nav.desktop ul li,
+    footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
+        padding-left: 2rem;
     }
 
 }
@@ -58,6 +89,11 @@
         padding-right: unset;
     }
 
+    header nav.desktop ul li,
+    footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
+        padding-left: 1rem;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
@@ -70,6 +106,8 @@
 
     }
 
+
+
 }
 
 @media screen and (max-width:320px) {
@@ -80,5 +118,22 @@
 
     section.banner .text-banner {
         padding: 2.5rem 4.5rem;
+    }
+
+    footer.flexCenter {
+        flex-direction: column;
+    }
+
+    footer.flexCenter.footerPage div.footerOne {
+        width: 100%;
+    }
+
+    footer.flexCenter.footerPage div.footerOne nav.desktop {
+        justify-content: center;
+    }
+
+    footer.flexCenter.footerPage div.footerTwo p {
+        text-align: center;
+        margin-top: 0.5rem;
     }
 }

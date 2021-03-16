@@ -58,14 +58,16 @@ section.featuredVehicles {
     padding: 5.6rem 2%;
 }
 
-section.featuredVehicles h2 {
+section.featuredVehicles h2,
+section.contact.container .flexCenter h2 {
     text-align: center;
     font-size: 1.5rem;
     font-style: italic;
     text-transform: uppercase;
 }
 
-section.featuredVehicles .line-title {
+section.featuredVehicles .flexCenter .line-title,
+section.contact.container .flexCenter .line-title {
     width: 20%;
     border: 1px solid black;
 
@@ -129,6 +131,7 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox p {
     background-color: var(--selected);
     border-bottom: 0.3rem solid #B21E1E;
     border-radius: 1.25rem;
+    font-size: 1.1rem;
     cursor: pointer;
 }
 
@@ -145,7 +148,9 @@ section.servicesDescription.container.flexCenter {
 
 
 section.servicesDescription.container.flexCenter .descriptionOne,
-section.servicesDescription.container.flexCenter .descriptionTwo {
+section.servicesDescription.container.flexCenter .descriptionTwo,
+footer.flexCenter.footerPage div.footerOne,
+footer.flexCenter.footerPage div.footerTwo {
     color: white;
     width: 50%;
     padding: 5.6rem 2%;
@@ -203,4 +208,56 @@ section.servicesDescription.container.flexCenter .navigation .arrow img {
 section.servicesDescription.container.flexCenter .navigation h2 {
     color: #252525;
     font-size: 1.8rem;
+}
+
+section.contact {
+    padding: 5.6rem 2%;
+    display: flex;
+    flex-direction: column;
+}
+
+section.contact.container .flexCenter {
+    justify-content: center;
+}
+
+section form.flexCenter {
+    flex-direction: column;
+}
+
+section.contact.container form.flexCenter input[type=text],
+section.contact.container form.flexCenter .flexRow.flexCenter input[type=email],
+section.contact.container form.flexCenter .flexRow.flexCenter input[type=tel] {
+    width: 50%;
+    border: 0.1rem solid #ccc;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    border-radius: 1.2rem;
+    padding: 1.5rem 0 1.5rem 0.9rem;
+    margin: 1.2rem 0;
+    font-size: 1rem;
+}
+
+section.contact.container form.flexCenter .flexRow {
+    width: 50%;
+}
+
+section.contact.container form.flexCenter .flexRow.flexCenter {
+    justify-content: space-between;
+}
+
+section.contact.container form.flexCenter .flexRow.flexCenter input[type=email],
+section.contact.container form.flexCenter .flexRow.flexCenter input[type=tel] {
+    width: 45%;
+
+}
+
+section.contact.container form.flexCenter textarea {
+    width: 50%;
+    height: 7.5rem;
+    border: 0.1rem solid #ccc;
+    border-radius: 1.2rem;
+    margin: 1.2rem 0;
+    padding: 0.5rem;
+    font-size: 1rem;
+    resize: none;
 }

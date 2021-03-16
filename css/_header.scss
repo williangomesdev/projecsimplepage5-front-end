@@ -3,7 +3,8 @@ header {
     height: 8.1rem;
 }
 
-header nav.desktop {
+header nav.desktop,
+footer.flexCenter.footerPage div.footerOne nav.desktop {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -11,11 +12,13 @@ header nav.desktop {
     top: 0.8rem;
 }
 
-header nav.desktop ul {
+header nav.desktop ul,
+footer.flexCenter.footerPage div.footerOne nav.desktop ul {
     list-style-type: none;
 }
 
-header nav.desktop ul li {
+header nav.desktop ul li,
+footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
     display: inline-block;
     padding-left: 4rem;
 
@@ -24,7 +27,8 @@ header nav.desktop ul li {
     }
 }
 
-header nav.desktop ul li a {
+header nav.desktop ul li a,
+footer.flexCenter.footerPage div.footerOne nav.desktop ul li a {
     text-decoration: none;
     font-style: italic;
     color: black;
