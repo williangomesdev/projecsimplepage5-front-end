@@ -418,6 +418,12 @@ section.contact.container form.flexCenter textarea {
   resize: none;
 }
 
+section.sell.container section.flexCenter.flexRow {
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
 section.sell.container section.mainSell {
   padding: 2.5rem 2%;
   width: 20%;
@@ -482,6 +488,10 @@ section.sell.container section.searchValor form .formTwo {
           align-items: center;
 }
 
+section.sell.container section.searchValor form .formThree {
+  display: none;
+}
+
 section.sell.container section.searchValor form .formOne input[type=checkbox] {
   width: 1.2rem;
   height: 1.2rem;
@@ -502,9 +512,22 @@ section.sell.container section.searchValor form .formTwo label:nth-of-type(1) {
   text-transform: uppercase;
 }
 
+section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter {
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter .carBox {
+  width: 30%;
+  margin: 0.8rem;
+}
+
 @media screen and (max-width: 1024px) {
   section.banner .text-banner {
     padding: 6.2rem;
+  }
+  section.sell.container section.mainSell {
+    width: 25%;
   }
 }
 
@@ -521,6 +544,9 @@ section.sell.container section.searchValor form .formTwo label:nth-of-type(1) {
   header nav.desktop ul li,
   footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
     padding-left: 3rem;
+  }
+  section.sell.container section.mainSell {
+    width: 30%;
   }
 }
 
@@ -554,6 +580,61 @@ section.sell.container section.searchValor form .formTwo label:nth-of-type(1) {
   header nav.desktop ul li,
   footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
     padding-left: 2rem;
+  }
+  section.sell.container section.flexCenter.flexRow {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  section.sell.container section.mainSell {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.sell.container section.mainSell .flexCenter {
+    width: 100%;
+  }
+  section.sell.container section.mainSell .flexCenter .mainSellOne.flexCenter {
+    width: 100%;
+  }
+  section.sell.container section.mainSell .flexCenter .mainSellOneP p {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+  section.sell.container section.searchValor {
+    padding: 2rem 0;
+  }
+  section.sell.container section.searchValor h2 {
+    text-align: center;
+  }
+  section.sell.container section.searchValor form .formOne,
+  section.sell.container section.searchValor form .formTwo {
+    display: none;
+  }
+  section.sell.container section.searchValor form .formThree {
+    display: unset;
+    padding: 1rem 0;
+  }
+  section.sell.container section.featuredVehicles.container {
+    padding: 0 2%;
+  }
+  section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter {
+    padding: 0 2%;
   }
 }
 
@@ -595,6 +676,9 @@ section.sell.container section.searchValor form .formTwo label:nth-of-type(1) {
   footer.flexCenter.footerPage div.footerOne nav.desktop ul li {
     padding-left: 1rem;
   }
+  section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter .carBox {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -630,6 +714,9 @@ section.sell.container section.searchValor form .formTwo label:nth-of-type(1) {
   footer.flexCenter.footerPage div.footerTwo p {
     text-align: center;
     margin-top: 0.5rem;
+  }
+  section.sell.container section.searchValor form .formThree {
+    padding: 1rem 13%;
   }
 }
 

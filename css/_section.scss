@@ -267,9 +267,14 @@ section.contact.container form.flexCenter textarea {
     resize: none;
 }
 
+section.sell.container section.flexCenter.flexRow {
+    align-items: flex-start;
+}
+
 section.sell.container section.mainSell {
     padding: 2.5rem 2%;
     width: 20%;
+
 }
 
 section.sell.container section.mainSell .flexCenter .mainSellOne.flexCenter {
@@ -313,6 +318,10 @@ section.sell.container section.searchValor form .formTwo {
     align-items: center;
 }
 
+section.sell.container section.searchValor form .formThree {
+    display: none;
+}
+
 section.sell.container section.searchValor form .formOne input[type=checkbox] {
     width: 1.2rem;
     height: 1.2rem;
@@ -331,4 +340,13 @@ section.sell.container section.searchValor form .formTwo label {
         font-style: italic;
         text-transform: uppercase;
     }
+}
+
+section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter {
+    flex-wrap: wrap;
+}
+
+section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter .carBox {
+    width: 30%;
+    margin: 0.8rem;
 }
