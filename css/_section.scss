@@ -49,17 +49,20 @@ section.banner .text-banner-single {
     }
 }
 
-section.featuredVehicles>.flexCenter {
+section.featuredVehicles,
+section.sell {
+    padding: 5.6rem 2%;
+}
+
+section.featuredVehicles>.flexCenter,
+section.sell.container>.flexCenter {
     justify-content: center;
     width: 100%;
 }
 
-section.featuredVehicles {
-    padding: 5.6rem 2%;
-}
-
 section.featuredVehicles h2,
-section.contact.container .flexCenter h2 {
+section.contact.container .flexCenter h2,
+section.sell.container .flexCenter h2 {
     text-align: center;
     font-size: 1.5rem;
     font-style: italic;
@@ -67,7 +70,8 @@ section.contact.container .flexCenter h2 {
 }
 
 section.featuredVehicles .flexCenter .line-title,
-section.contact.container .flexCenter .line-title {
+section.contact.container .flexCenter .line-title,
+section.sell.container .flexCenter .line-title {
     width: 20%;
     border: 1px solid black;
 
@@ -260,4 +264,8 @@ section.contact.container form.flexCenter textarea {
     padding: 0.5rem;
     font-size: 1rem;
     resize: none;
+}
+
+section.sell.container section.mainSell {
+    padding: 2.5rem 2%;
 }
