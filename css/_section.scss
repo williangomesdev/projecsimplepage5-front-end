@@ -62,7 +62,8 @@ section.sell.container>.flexCenter {
 
 section.featuredVehicles h2,
 section.contact.container .flexCenter h2,
-section.sell.container .flexCenter h2 {
+section.sell.container .flexCenter h2,
+section.sell.container section.searchValor h2 {
     text-align: center;
     font-size: 1.5rem;
     font-style: italic;
@@ -268,4 +269,66 @@ section.contact.container form.flexCenter textarea {
 
 section.sell.container section.mainSell {
     padding: 2.5rem 2%;
+    width: 20%;
+}
+
+section.sell.container section.mainSell .flexCenter .mainSellOne.flexCenter {
+    flex-direction: column;
+    justify-content: flex-start;
+    padding: 1rem 0;
+
+}
+
+section.sell.container section.mainSell .flexCenter .mainSellOne.flexCenter input[type=range] {
+    padding: 0.5rem 0;
+    width: 100%;
+    text-align: center;
+}
+
+section.sell.container section.mainSell .mainSellOne.flexCenter div.mainSellOneP.flexCenter {
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0.5rem 0;
+
+}
+
+section.sell.container section.searchValor h2 {
+    text-align: left;
+    padding: 1rem 0;
+
+}
+
+section.sell.container section.searchValor form {
+    display: flex;
+    justify-content: flex-start;
+
+}
+
+section.sell.container section.searchValor form .formOne,
+section.sell.container section.searchValor form .formTwo {
+    width: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+section.sell.container section.searchValor form .formOne input[type=checkbox] {
+    width: 1.2rem;
+    height: 1.2rem;
+}
+
+section.sell.container section.searchValor form .formTwo {
+    width: 50%;
+}
+
+section.sell.container section.searchValor form .formTwo label {
+    font-size: 1rem;
+
+    &:nth-of-type(1) {
+        font-size: 1.1rem;
+        font-weight: 300;
+        font-style: italic;
+        text-transform: uppercase;
+    }
 }
