@@ -6,6 +6,10 @@
     section.sell.container section.mainSell {
         width: 25%;
     }
+
+    section.infoCar.flexCenter.container .carDescription {
+        width: 50%;
+    }
 }
 
 @media screen and (max-width: 970px) {
@@ -105,6 +109,7 @@
         padding: 1rem 0;
     }
 
+
     section.sell.container section.featuredVehicles.container {
         padding: 0 2%;
     }
@@ -112,6 +117,21 @@
     section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter {
         padding: 0 2%;
     }
+
+    section.infoCar.flexCenter.container {
+        flex-direction: column;
+        padding: 0 2%;
+    }
+
+    section.infoCar.flexCenter.container .infoItem {
+        width: 100%;
+
+    }
+
+    section.infoCar.flexCenter.container .carDescription {
+        width: 100%;
+    }
+
 }
 
 @media screen and (max-width: 680px) {
@@ -160,11 +180,23 @@
         width: 100%;
     }
 
+    section.aboutImgOne.container .aboutImgWrapper {
+
+        flex-direction: column;
+        align-items: center;
+    }
+
+    section.aboutImgOne.container .aboutImgWrapper .figureTwo {
+        width: 40%;
+        margin: 1rem;
+        padding-top: 40%;
+    }
+
 }
 
 @media screen and (max-width: 480px) {
     html {
-        font-size: 12px;
+        font-size: 14px;
     }
 
     section.featuredVehicles .featuredShowcase.flexCenter .carBox {
@@ -172,11 +204,25 @@
 
     }
 
+    section.ind.featuredVehicles.container {
+        padding: 3.6rem 2%;
+
+    }
 
 
 }
 
+@media screen and (max-width: 375px) {
+    html {
+        font-size: 12px;
+    }
+}
+
 @media screen and (max-width:320px) {
+    header {
+        height: 9.1rem;
+    }
+
     section.banner {
         height: 110vw;
     }
@@ -206,4 +252,18 @@
     section.sell.container section.searchValor form .formThree {
         padding: 1rem 13%;
     }
+
+    section.infoCar.flexCenter.container .infoItem {
+        height: 25.7rem;
+    }
+
+    section.infoCar.flexCenter.container .carDescription {
+        text-align: center;
+    }
+
+    section.ind.featuredVehicles.container {
+        padding: 3.6rem 2% 0 2%;
+
+    }
+
 }

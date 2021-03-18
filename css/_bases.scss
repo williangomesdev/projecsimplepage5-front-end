@@ -5,6 +5,10 @@
     font-family: 'Oswald', sans-serif;
 }
 
+:root {
+    --selected: #EB2D2D;
+}
+
 html {
     font-size: 16px;
 }
@@ -28,7 +32,20 @@ body {
     align-items: center;
 }
 
-:root {
-    --selected: #EB2D2D;
+.bread pre {
+    font-size: 1.1rem;
 
+    &:last-of-type {
+        color: red;
+    }
+}
+
+.bread {
+    text-align: center;
+}
+
+.bread pre a,
+.bread pre span {
+    text-decoration: none;
+    color: black;
 }

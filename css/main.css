@@ -6,6 +6,10 @@
   font-family: 'Oswald', sans-serif;
 }
 
+:root {
+  --selected: #EB2D2D;
+}
+
 html {
   font-size: 16px;
 }
@@ -35,8 +39,22 @@ body .container {
           align-items: center;
 }
 
-:root {
-  --selected: #EB2D2D;
+.bread pre {
+  font-size: 1.1rem;
+}
+
+.bread pre:last-of-type {
+  color: red;
+}
+
+.bread {
+  text-align: center;
+}
+
+.bread pre a,
+.bread pre span {
+  text-decoration: none;
+  color: black;
 }
 
 header {
@@ -191,7 +209,9 @@ section.sell.container > .flexCenter {
 section.featuredVehicles h2,
 section.contact.container .flexCenter h2,
 section.sell.container .flexCenter h2,
-section.sell.container section.searchValor h2 {
+section.sell.container section.searchValor h2,
+section.infoCar.flexCenter.container .carDescription h2,
+section.aboutImgOne.container h2 {
   text-align: center;
   font-size: 1.5rem;
   font-style: italic;
@@ -235,10 +255,9 @@ section.featuredVehicles .featuredShowcase.flexCenter .carBox {
 
 section.featuredVehicles .featuredShowcase.flexCenter .carBox .carimg {
   background-image: url(../imagens/carro1.jpg);
-  background-size: cover;
   width: 100%;
-  padding-top: 100%;
-  background-size: 100% 100%;
+  padding-top: 80%;
+  background-size: contain;
   background-repeat: no-repeat;
 }
 
@@ -457,7 +476,8 @@ section.sell.container section.mainSell .mainSellOne.flexCenter div.mainSellOneP
   padding: 0.5rem 0;
 }
 
-section.sell.container section.searchValor h2 {
+section.sell.container section.searchValor h2,
+section.aboutImgOne.container h2 {
   text-align: left;
   padding: 1rem 0;
 }
@@ -522,12 +542,154 @@ section.sell.container section.featuredVehicles.container .featuredShowcase.flex
   margin: 0.8rem;
 }
 
+section.infoCar.flexCenter.container {
+  width: 100%;
+  padding: 5.6rem 2% 1rem 2%;
+}
+
+section.infoCar.flexCenter {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+section.infoCar.flexCenter.container .infoItem {
+  width: 50%;
+  height: 600px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.infoItem .featuredPhoto {
+  width: 100%;
+  height: 70%;
+  background-image: url(../imagens/carro1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.infoItem .miniWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-top: 2rem;
+}
+
+.infoItem .arrowLeft,
+.infoItem .arrowRight {
+  background-image: url(../imagens/arrow-left.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 2rem;
+  height: 2rem;
+}
+
+.infoItem .navGallery {
+  width: 100%;
+  padding: 0.2%;
+  overflow-x: hidden;
+}
+
+.infoItem .galleryWrapper {
+  width: 200%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.infoItem .navGallery .miniImg {
+  background-image: url(../imagens/carro1.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 33%;
+  padding: 6px;
+  height: 6rem;
+  margin-right: 0.3rem;
+  cursor: pointer;
+}
+
+.infoItem .navGallery .miniImg:nth-of-type(6) {
+  margin: 0;
+}
+
+.infoItem .navGallery .miniImg:hover {
+  opacity: 0.7;
+}
+
+.infoItem .arrowRight {
+  background-image: url(../imagens/arrow-right.png);
+}
+
+section.infoCar.flexCenter.container .carDescription {
+  width: 30%;
+  padding: 1.8rem;
+}
+
+section.infoCar.flexCenter.container .carDescription h2 {
+  text-align: unset;
+  font-size: 2rem;
+}
+
+section.infoCar.flexCenter.container .carDescription p {
+  margin: 1.5rem 0;
+  text-align: justify;
+}
+
+section.ind.contact.container {
+  padding: 0 2% 5.6rem 2%;
+}
+
+section.aboutImgOne.container {
+  max-width: 52.5rem;
+  padding: 0 2% 5.6rem 2%;
+}
+
+section.aboutImgOne.container p {
+  text-align: justify;
+}
+
+section.aboutImgOne.container .figure {
+  width: 100%;
+  padding-top: 45%;
+  border: 0.1rem solid var(--selected);
+}
+
+section.aboutImgOne.container .aboutImgWrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 2rem;
+}
+
+section.aboutImgOne.container .aboutImgWrapper .figureTwo {
+  width: 100%;
+  margin-right: 1rem;
+  border: 0.1rem solid var(--selected);
+}
+
 @media screen and (max-width: 1024px) {
   section.banner .text-banner {
     padding: 6.2rem;
   }
   section.sell.container section.mainSell {
     width: 25%;
+  }
+  section.infoCar.flexCenter.container .carDescription {
+    width: 50%;
   }
 }
 
@@ -636,6 +798,19 @@ section.sell.container section.featuredVehicles.container .featuredShowcase.flex
   section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter {
     padding: 0 2%;
   }
+  section.infoCar.flexCenter.container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 0 2%;
+  }
+  section.infoCar.flexCenter.container .infoItem {
+    width: 100%;
+  }
+  section.infoCar.flexCenter.container .carDescription {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width: 680px) {
@@ -679,18 +854,44 @@ section.sell.container section.featuredVehicles.container .featuredShowcase.flex
   section.sell.container section.featuredVehicles.container .featuredShowcase.flexCenter .carBox {
     width: 100%;
   }
+  section.aboutImgOne.container .aboutImgWrapper {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  section.aboutImgOne.container .aboutImgWrapper .figureTwo {
+    width: 40%;
+    margin: 1rem;
+    padding-top: 40%;
+  }
 }
 
 @media screen and (max-width: 480px) {
   html {
-    font-size: 12px;
+    font-size: 14px;
   }
   section.featuredVehicles .featuredShowcase.flexCenter .carBox {
     width: 100%;
   }
+  section.ind.featuredVehicles.container {
+    padding: 3.6rem 2%;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  html {
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 320px) {
+  header {
+    height: 9.1rem;
+  }
   section.banner {
     height: 110vw;
   }
@@ -717,6 +918,15 @@ section.sell.container section.featuredVehicles.container .featuredShowcase.flex
   }
   section.sell.container section.searchValor form .formThree {
     padding: 1rem 13%;
+  }
+  section.infoCar.flexCenter.container .infoItem {
+    height: 25.7rem;
+  }
+  section.infoCar.flexCenter.container .carDescription {
+    text-align: center;
+  }
+  section.ind.featuredVehicles.container {
+    padding: 3.6rem 2% 0 2%;
   }
 }
 
